@@ -1,10 +1,10 @@
 /* =========================================================
-   CONFIGURACIÓN — cambia solo esta línea
+   CONFIGURACIÓN — cambia solo estas líneas
    ========================================================= */
 
 // Tu número de WhatsApp con código de país, SOLO números (sin +, espacios ni guiones).
 // México: 52 + 10 dígitos  →  ejemplo: "525512345678"
-const WHATSAPP_NUMBER = "520000000000";
+const WHATSAPP_NUMBER = "525522406934";
 
 // Mensaje por defecto si un botón no tiene uno propio (data-msg)
 const WHATSAPP_DEFAULT_MSG = "Hola AgoFitness, quiero información sobre sus productos GymCo.";

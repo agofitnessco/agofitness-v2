@@ -124,7 +124,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 120px 0 2.5rem; overflow: hidden; isolation: isolate;
 }
-.hero__bg { position: absolute; inset: -6% 0; z-index: -2; scale: 1.25; transition: scale 2.8s var(--ease); will-change: translate; }
+.hero__bg { background-position: center 22%; position: absolute; inset: -6% 0; z-index: -2; scale: 1.25; transition: scale 2.8s var(--ease); will-change: translate; }
 body.is-loaded .hero__bg { scale: 1; }
 .hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,12,12,.35) 0%, rgba(13,12,12,.2) 40%, rgba(13,12,12,.92) 100%), linear-gradient(90deg, rgba(13,12,12,.7), transparent 70%); }
 .hero__slash {
