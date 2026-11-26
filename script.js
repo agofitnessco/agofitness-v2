@@ -1,5 +1,5 @@
 /* =========================================================
-   CONFIGURACIÓN — cambia solo estas líneas
+   CONFIGURACIÓN — cambia solo esta línea
    ========================================================= */
 
 // Tu número de WhatsApp con código de país, SOLO números (sin +, espacios ni guiones).
