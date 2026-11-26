@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AgoFitness · Distribuidor oficial GymCo</title>
+  <meta name="description" content="AgoFitness, distribuidor oficial de GymCo. Ropa deportiva de alto rendimiento: colecciones SICLO y SECOND SKIN." />
+  <meta name="theme-color" content="#0d0c0c" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Open Graph (cómo se ve al compartir el link en WhatsApp / redes) -->
+  <meta property="og:title" content="AgoFitness · Distribuidor oficial GymCo" />
+  <meta property="og:description" content="Ropa deportiva de alto rendimiento. Consulta nuestros catálogos SICLO y SECOND SKIN." />
+  <meta property="og:image" content="https://agofitnessco.com/assets/img/hero.jpg" />
+  <meta property="og:url" content="https://agofitnessco.com/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ INTRO / LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo"><img src="assets/logo-white.png" alt="" /></div>
+      <div class="loader__bar"><span></span></div>
+      <p class="loader__txt">Distribuidor oficial <b>GymCo</b></p>
+    </div>
+  </div>
+
+  <!-- Barra de progreso de scroll + cursor personalizado -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label">Ver</span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#inicio" class="nav__logo" aria-label="AgoFitness inicio">
+        <img src="assets/logo-white.png" alt="AgoFitness" />
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#catalogos">Catálogos</a>
+        <a href="#colecciones">Colecciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#comprar">Cómo comprar</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="btn btn--sm btn--rose js-whatsapp" data-msg="Hola AgoFitness, quiero información sobre sus productos GymCo.">Contactar</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <!-- Cambia la imagen de fondo en assets/img/hero.jpg -->
+      <div class="hero__bg media" style="--img:url('assets/img/hero.jpg')" role="img" aria-label="Atleta entrenando con ropa GymCo"></div>
+      <div class="hero__slash" aria-hidden="true"></div>
+
+      <div class="hero__content container" id="heroContent">
+        <p class="eyebrow hero-in" style="--d:0"><span class="dot"></span> Distribuidor oficial GymCo</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Entrena</span></span>
+          <span class="line"><span class="outline">sin</span></span>
+          <span class="line"><span class="rose">límites.</span></span>
+        </h1>
+        <p class="hero__lead hero-in" style="--d:4">
+          Ropa deportiva de alto rendimiento diseñada para moverse contigo. Del estudio de ciclismo al día a día.
+        </p>
+        <div class="hero__cta hero-in" style="--d:5">
+          <a href="#catalogos" class="btn btn--rose">Ver catálogos <i class="arrow" aria-hidden="true"></i></a>
+          <a href="#" class="btn btn--ghost js-whatsapp" data-msg="Hola AgoFitness, quiero hacer un pedido.">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero__stats container hero-in" style="--d:6">
+        <div><strong>GymCo</strong><span>Marca oficial</span></div>
+        <div><strong data-count="2">0</strong><span>Colecciones</span></div>
+        <div><strong data-count="100" data-suffix="%">0%</strong><span>Producto original</span></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>SICLO</span><i>/</i><span>SECOND SKIN</span><i>/</i><span>GYMCO</span><i>/</i><span>AGOFITNESS</span><i>/</i>
+        <span>SICLO</span><i>/</i><span>SECOND SKIN</span><i>/</i><span>GYMCO</span><i>/</i><span>AGOFITNESS</span><i>/</i>
+      </div>
+    </div>
+
+    <!-- ============ CATÁLOGOS ============ -->
+    <section class="section" id="catalogos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span> Catálogos 2026</p>
+          <h2 data-split class="section__title">Elige tu <span class="rose">colección</span></h2>
+          <p class="section__sub">Descarga o consulta en línea el catálogo completo con modelos, tallas y colores disponibles.</p>
+        </div>
+
+        <div class="catalogs">
+          <!-- CATÁLOGO SICLO
+               PDF: catalogos/catalogo-siclo.pdf
+               Imagen portada: assets/img/siclo.jpg -->
+          <article class="catalog reveal" data-cursor="Abrir">
+            <div class="catalog__media media" style="--img:url('assets/img/siclo.jpg')"></div>
+            <div class="catalog__shade"></div>
+            <div class="catalog__glare"></div>
+            <span class="catalog__num">01</span>
+            <div class="catalog__body">
+              <p class="catalog__tag">Catálogo</p>
+              <h3 class="catalog__title">SICLO</h3>
+              <p class="catalog__desc">Prendas pensadas para indoor cycling y entrenamientos de alta intensidad. Ligeras, transpirables y con secado rápido.</p>
+              <div class="catalog__actions">
+                <a href="catalogos/catalogo-siclo.pdf" target="_blank" rel="noopener" class="btn btn--light">Ver catálogo</a>
+                <a href="catalogos/catalogo-siclo.pdf" download class="btn btn--icon" aria-label="Descargar catálogo SICLO">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATÁLOGO SECOND SKIN
+               PDF: catalogos/catalogo-second-skin.pdf
+               Imagen portada: assets/img/second-skin.jpg -->
+          <article class="catalog catalog--alt reveal" data-cursor="Abrir">
+            <div class="catalog__media media" style="--img:url('assets/img/second-skin.jpg')"></div>
+            <div class="catalog__shade"></div>
+            <div class="catalog__glare"></div>
+            <span class="catalog__num">02</span>
+            <div class="catalog__body">
+              <p class="catalog__tag">Catálogo</p>
+              <h3 class="catalog__title">SECOND <span>SKIN</span></h3>
+              <p class="catalog__desc">Ajuste de compresión que se siente como una segunda piel. Soporte, libertad de movimiento y una silueta impecable.</p>
+              <div class="catalog__actions">
+                <a href="catalogos/catalogo-second-skin.pdf" target="_blank" rel="noopener" class="btn btn--light">Ver catálogo</a>
+                <a href="catalogos/catalogo-second-skin.pdf" download class="btn btn--icon" aria-label="Descargar catálogo SECOND SKIN">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLECCIONES / GALERÍA ============ -->
+    <section class="section section--dark" id="colecciones">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow"><span class="dot"></span> Lo más buscado</p>
+            <h2 data-split class="section__title">Hecho para <span class="rose">moverse</span></h2>
+          </div>
+          <a href="#" class="btn btn--ghost js-whatsapp" data-msg="Hola, quiero ver disponibilidad de tallas y colores.">Consultar disponibilidad</a>
+        </div>
+
+        <!-- Reemplaza las imágenes en assets/img/producto-1.jpg ... producto-4.jpg
+             y cambia los nombres / categorías -->
+        <div class="gallery">
+          <figure data-cursor="Pedir" class="tile tile--tall reveal">
+            <div class="tile__media media" style="--img:url('assets/img/producto-1.jpg')"></div>
+            <figcaption><span>SICLO</span><strong>Leggings Ride</strong></figcaption>
+          </figure>
+          <figure data-cursor="Pedir" class="tile reveal">
+            <div class="tile__media media" style="--img:url('assets/img/producto-2.jpg')"></div>
+            <figcaption><span>SECOND SKIN</span><strong>Top Sculpt</strong></figcaption>
+          </figure>
+          <figure data-cursor="Pedir" class="tile reveal">
+            <div class="tile__media media" style="--img:url('assets/img/producto-3.jpg')"></div>
+            <figcaption><span>SICLO</span><strong>Biker Short</strong></figcaption>
+          </figure>
+          <figure data-cursor="Pedir" class="tile tile--wide reveal">
+            <div class="tile__media media" style="--img:url('assets/img/producto-4.jpg')"></div>
+            <figcaption><span>SECOND SKIN</span><strong>Set Compression</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS / BENEFICIOS ============ -->
+    <section class="section" id="nosotros">
+      <div class="container about">
+        <div class="about__media reveal">
+          <!-- Imagen: assets/img/nosotros.jpg -->
+          <div class="media" style="--img:url('assets/img/nosotros.jpg')"></div>
+          <div class="about__badge">
+            <img src="assets/logo-white.png" alt="" />
+            <span>× GymCo</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow reveal"><span class="dot"></span> Sobre AgoFitness</p>
+          <h2 data-split class="section__title reveal">Distribuidores <span class="rose">oficiales</span> de GymCo</h2>
+          <p class="reveal">
+            En AgoFitness llevamos la calidad de GymCo directo a ti. Somos distribuidores autorizados, así que cada prenda
+            que recibes es 100% original, con la tecnología textil y el ajuste que caracteriza a la marca.
+          </p>
+          <ul class="features">
+            <li class="reveal">
+              <span class="features__icon"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.6 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg></span>
+              <div><strong>Producto original</strong><p>Distribución oficial y garantizada de GymCo.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="features__icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM7 19a2 2 0 100-4 2 2 0 000 4zM17 19a2 2 0 100-4 2 2 0 000 4z"/></svg></span>
+              <div><strong>Envíos</strong><p>Enviamos tu pedido de forma rápida y segura.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="features__icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></span>
+              <div><strong>Atención personalizada</strong><p>Te asesoramos con tallas y modelos por WhatsApp.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO COMPRAR ============ -->
+    <section class="section section--rose" id="comprar">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--dark"><span class="dot"></span> Fácil y rápido</p>
+          <h2 data-split class="section__title">Cómo comprar</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__n">01</span>
+            <h3>Explora</h3>
+            <p>Revisa los catálogos SICLO y SECOND SKIN y elige tus favoritos.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">02</span>
+            <h3>Escríbenos</h3>
+            <p>Mándanos por WhatsApp el modelo, talla y color que quieres.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">03</span>
+            <h3>Confirma</h3>
+            <p>Te confirmamos disponibilidad, total y forma de pago.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">04</span>
+            <h3>Recibe</h3>
+            <p>Enviamos tu pedido y ¡a entrenar!</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span> Dudas</p>
+          <h2 data-split class="section__title">Preguntas <span class="rose">frecuentes</span></h2>
+        </div>
+        <div class="faq__list">
+          <details class="reveal">
+            <summary>¿Los productos son originales?</summary>
+            <p>Sí. AgoFitness es distribuidor oficial de GymCo, todas las prendas son 100% originales.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Cómo sé qué talla elegir?</summary>
+            <p>Cada catálogo incluye la guía de tallas. Si tienes dudas, escríbenos por WhatsApp y te asesoramos.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Hacen envíos?</summary>
+            <p>Sí, hacemos envíos. Escríbenos con tu ubicación y te compartimos costo y tiempo de entrega.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué formas de pago aceptan?</summary>
+            <p>Edita este texto con tus formas de pago (transferencia, tarjeta, efectivo, etc.).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2 data-split>¿Listo para tu <span class="rose">próximo</span> entrenamiento?</h2>
+        <a href="#" class="btn btn--rose btn--lg js-whatsapp" data-msg="Hola AgoFitness, quiero hacer un pedido.">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.5z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="AgoFitness" />
+        <p>Distribuidor oficial de GymCo. Ropa deportiva de alto rendimiento.</p>
+      </div>
+      <div>
+        <h4>Catálogos</h4>
+        <a href="catalogos/catalogo-siclo.pdf" target="_blank" rel="noopener">SICLO</a>
+        <a href="catalogos/catalogo-second-skin.pdf" target="_blank" rel="noopener">SECOND SKIN</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="#" class="js-whatsapp">WhatsApp</a>
+        <a href="https://www.instagram.com/agofitnessco" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/agofitnessco" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> AgoFitness. Todos los derechos reservados.</span>
+      <span>GymCo es marca registrada de su propietario.</span>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÓN FLOTANTE WHATSAPP ============ -->
+  <a href="#" class="wa-float js-whatsapp" aria-label="Escríbenos por WhatsApp" data-msg="Hola AgoFitness, quiero información.">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.5z"/></svg>
+    <span class="wa-float__label">¿Te ayudamos?</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
